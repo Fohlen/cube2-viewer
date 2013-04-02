@@ -1,0 +1,130 @@
+body {
+	margin-top: 35px;
+}
+.row {
+	width: 670px;
+}
+#ibox{
+    position:absolute;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid #ccc;
+    z-index:1001;
+    display:none;
+    padding:4px;
+    -webkit-box-shadow: 0px 0px 6px 0px #bbb;
+    -moz-box-shadow: 0px 0px 6px 0px #bbb;
+    box-shadow: 0px 0px 6px 0px #bbb; 
+}
+#ibox img{
+    border: none;
+}
+#ibox br{
+    clear:both;
+}
+#ibox img {
+	display: block;
+}
+#ibox .content {
+	display: inline;
+}
+.server {
+	display: inline;
+}
+.server span {
+	display: none;
+}
+#ibox .headline, 
+#ibox .map, 
+#ibox .mode, 
+#ibox .ctimeb, 
+#ibox .time,
+#ibox .players,
+#ibox .cplayersb,
+#ibox .ip,
+#ibox .port {
+	letter-spacing: normal; 
+	font-weight: normal;
+	font-size: 220%;
+	font-family: "Lucida Grande",Helvetica,Verdana,sans-serif;
+	color: #3d9fd0;
+	line-height: 1.1em;
+	text-indent: 10px;
+	
+}
+#ibox .headline {
+	background-color: rgba(255, 255, 255, .25);
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	padding-bottom: 10px;
+	left: 0px;
+}
+#ibox .map {
+	background-color: rgba(255, 255, 255, .25);
+	position: absolute;
+	width: 48%;
+	right: 0%;
+	padding-right: 2%;
+	top: 286px;
+}
+#ibox .mode {
+	background-color: rgba(255, 255, 255, .25);
+	position: absolute;
+	width: 48%;
+	left: 0%;
+	padding-left: 2%;
+	top: 286px;
+}
+#ibox .ctimeb {
+	color: #FFF;
+	position: absolute;
+	top: 324px;
+	left: 0px;
+	background-color: #3d9fd0;
+	z-index:2;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 14px;
+}
+#ibox .time {
+	position: absolute;
+	top: 324px;
+	z-index:1;
+}
+#ibox .cplayersb {
+	position: absolute;
+	top: 362px;
+	left: 0px;
+	z-index:2;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #FFF;
+	background-color: #7bbddf;
+	text-indent: 14px;
+}
+#ibox .players {
+	position: absolute;
+	top: 363px;
+	z-index:1;
+	color: #7bbddf;
+	width: 100%;
+}
+#ibox .ip {
+	position: absolute;
+	margin-top: 72px;
+}
+#ibox .port {
+	margin-top: 72px;
+	position: absolute;
+	color: #7bbddf;
+	right: 10px;
+	line-height: 1.1em;
+}
+.clear {
+	display: none;
+}
+#ibox .clear {
+	display: block;
+	margin-top: 110px;
+}
