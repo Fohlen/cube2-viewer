@@ -1,6 +1,5 @@
 <?php
 require_once('inc/functions.php');
-require_once('inc/Thread.php');
 include_once('inc/conf.inc.php');
 
 class cube2_viewer {
@@ -24,19 +23,10 @@ protected function callback(array $conf = null) {
 }	
 	
 private function get_servers(array $servers) {
-if(! Thread::available() ) {
-	die( 'Threads not supported' );
-}
-
 $servers_info = array();
 
 foreach ($servers as $server) {
-	$s_thread = new Thread('self::server_info');
-	$res = $s_thread->run($server['ip'], $server['port']);
-	
-	while($s_thread->isAlive() ) {
-		sleep(0.1);
-	}
+	$res = server_info($server['ip'], $server['port']);
 	
 	//No random index, fallback to original server name => unique
 	$servers_info[$res['port']] = $res;	
