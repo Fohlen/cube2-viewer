@@ -1,4 +1,5 @@
 // ibox image zoomer plugin // roXon
+// http://www.roxon.in/
 (function($) {
     $.fn.ibox = function( htmlcode, callback ) {
         
@@ -73,6 +74,6 @@
 
 $(document).ready(function() {
     $('.row img').ibox(function () {
-		alert('hallo');
+		// alert('hallo');
 	});
 });
